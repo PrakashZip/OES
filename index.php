@@ -173,7 +173,7 @@ var b = document.forms["form"]["cpassword"].value;if (a!=b){alert("Passwords mus
 <!--Footer start-->
 <div class="row footer">
 <div class="col-md-3 box">
-<a href="http://satyaprakash.me" target="_blank">About us</a>
+<a href="http://prakashzip.com" target="_blank">About us</a>
 </div>
 <div class="col-md-3 box">
 <a href="#" data-toggle="modal" data-target="#login">Admin Login</a></div>
@@ -195,11 +195,11 @@ var b = document.forms["form"]["cpassword"].value;if (a!=b){alert("Passwords mus
         <p>
 		<div class="row">
 		<div class="col-md-4">
-		 <img src="image/CAM00121.jpg" width=100 height=100 alt="Sunny Prakash Tiwari" class="img-rounded">
+		 <img src="image/CAM00121.jpg" width=100 height=100 alt="Prakash " class="img-rounded">
 		 </div>
 		 <div class="col-md-5">
-		<a href="http://satyaprakash.me" style="color:#202020; font-family:'typo' ;font-size:16px" class="title1">+91 7978849439</h4>
-		<h4 style="font-family:'typo' ">contact@satyapraksah.me</h4>
+		<a href="#" style="color:#202020; font-family:'typo' ;font-size:16px" class="title1">Contact Me</h4>
+		<h4 style="font-family:'typo' ">satyapraksah.od@gmail.com</h4>
 		<h4 style="font-family:'typo' ">Lovely professional University, Phagwara</h4></div></div>
 		</p>
       </div>

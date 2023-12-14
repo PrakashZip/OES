@@ -4,7 +4,7 @@ overflow-x:hidden;
 width:100%;
 font: 15px "Century Gothic", "Times Roman", sans-serif;
 background:#eee;
-min-height:550px;
+min-height:100%;
 background-attachment:fixed;
 }
 .bg
@@ -13,8 +13,8 @@ min-height:540px;
 }
 .bg1
 {
-background:url(../image/unp.jpg);
-min-height:535px;
+background:url(../image/unp.jpg) center center/cover no-repeat;
+min-height: 100vh;
 }
 
 @font-face {
