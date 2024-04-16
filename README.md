@@ -9,6 +9,8 @@
   <li>
     1. <a href="https://github.com/HamadCoder2> Hamad Saif</a> (@HamadCoder2)
   </li>
+</ul>
+
 <p>This Online Examination System project, developed using PHP, HTML, CSS, Bootstrap, and MySQL, provides a platform for users to register, enroll in exams, and take online tests. The system is designed to be used by students, administrators, and exam creators.</p>
 
 <h3>Features</h3>
