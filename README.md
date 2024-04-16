@@ -1,14 +1,10 @@
 
 <h2>Online Examination System</h2>
 
-<h3>Contributors</h3>
+<h3>Contributors 🤖</h3>
 <ul>
-  <li>
-    <a href="https://github.com/PrakashZip> Satya Prakash </a> (@prakashZip)
-  </li>
-  <li>
-    <a href="https://github.com/HamadCoder2> Hamad Saif</a> (@HamadCoder2)
-  </li>
+  <li> <a href="https://github.com/PrakashZip"> Satya Prakash </a> (@prakashZip) </li>
+  <li> <a href="https://github.com/HamadCoder2"> Hamad Saif</a> (@HamadCoder2) </li>
 </ul>
 
 <p>This Online Examination System project, developed using PHP, HTML, CSS, Bootstrap, and MySQL, provides a platform for users to register, enroll in exams, and take online tests. The system is designed to be used by students, administrators, and exam creators.</p>
