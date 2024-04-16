@@ -4,10 +4,10 @@
 <h3>Contributors</h3>
 <ul>
   <li>
-    1. <a href="https://github.com/PrakashZip> Satya Prakash</a> (@prakashZip)
+    <a href="https://github.com/PrakashZip> Satya Prakash </a> (@prakashZip)
   </li>
   <li>
-    1. <a href="https://github.com/HamadCoder2> Hamad Saif</a> (@HamadCoder2)
+    <a href="https://github.com/HamadCoder2> Hamad Saif</a> (@HamadCoder2)
   </li>
 </ul>
 
