@@ -42,7 +42,8 @@ font-family:'typo';
 .header
 {
 background:#202020;
-height:70px;
+height:0px;
+padding: 40px;
 }
 .logo
 {
