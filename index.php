@@ -249,6 +249,17 @@
                 <h4 style="font-family:'typo' ">Lovely professional University, Phagwara</h4>
             </div>
           </div>
+
+          <div class="row mt-5">
+            <div class="col-md-4">
+              <img src="image\hamad3.jpg" width=100 height=100 alt="Prakash " class="img-rounded">
+            </div>
+            <div class="col-md-5">
+              <a href="#" style="color:#202020; font-family:'typo' ;font-size:16px" class="title1">Contact Me</h4>
+                <h4 style="font-family:'typo' ">hamadsaif.dev@gmail.com</h4>
+                <h4 style="font-family:'typo' ">utkal University, BBSR</h4>
+            </div>
+          </div>
           </p>
         </div>
 

@@ -25,13 +25,17 @@
 <body>
 
   <!--header start-->
-  <div class="row header">
-    <div class="col-lg-6">
+  <div class="feedback-header">
+
+    <div class="">
       <span class="logo">Test Your Skill</span>
     </div>
-    <div class="col-md-2">
+
+    <div class="">
+
     </div>
-    <div class="col-md-4">
+    
+    <div class="">
       <?php
       include_once 'dbConnection.php';
       session_start();
@@ -42,8 +46,11 @@
       }
       ?>
 
-      <a href="index.php" class="pull-right btn sub1 title3"><span class="glyphicon glyphicon-home"
-          aria-hidden="true"></span>&nbsp;Home</a>&nbsp;
+      <a href="index.php" class="pull-right btn sub1 title3">
+        <span class="glyphicon glyphicon-home"
+          aria-hidden="true"></span>&nbsp;Home
+      </a>&nbsp;
+
     </div>
   </div>
 
