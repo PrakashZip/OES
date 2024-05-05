@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
   <link rel="stylesheet" href="css/main.css">
+  <!-- Option 1: Include in HTML -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="css/font.css">
   <script src="js/jquery.js" type="text/javascript"></script>
 
@@ -37,15 +39,18 @@
     <div class="header-inside">
 
       <div>
-        <span class="logo">Test Your Skill</span>
+        <span class="logo"><img  src="image\logo.png"/>Test Your Skill</span>
       </div>
 
 
       <div class="">
         <a href="#" class="pull-right btn sub1" data-toggle="modal" data-target="#myModal">
-          <span class="glyphicon glyphicon-log-in" aria-hidden="true">
+          <!-- <span class="glyphicon glyphicon-log-in" aria-hidden="true"> -->
 
-          </span>&nbsp;<span class="title1"><b>Signin</b>
+          </span>&nbsp;
+          <span class="title1">
+            <i class="bi bi-box-arrow-in-right"></i>
+            Sign in
           </span>
         </a>
       </div>
@@ -111,7 +116,7 @@
     <div class="row">
 
       <div class="col-md-7"></div>
-      <div class="col-md-4 panel">
+      <div class=" panel">
         <!-- sign in form begins -->
         <form class="form-horizontal" name="form" action="sign.php?q=account.php" onSubmit="return validateForm()"
           method="POST">
@@ -131,7 +136,7 @@
             <div class="form-group">
               <label class="col-md-12 control-label" for="gender"></label>
               <div class="col-md-12">
-                <select id="gender" name="gender" placeholder="Enter your gender" class="form-control input-md">
+                <select id="gender" name="gender" placeholder="Enter your gender" class="form-control">
                   <option value="Male">Select Gender</option>
                   <option value="M">Male</option>
                   <option value="F">Female</option>
