@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
   <link rel="stylesheet" href="css/main.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="css/font.css">
   <script src="js/jquery.js" type="text/javascript"></script>
 
@@ -33,8 +35,8 @@
 
 <body style="background:#eee;">
   <div class="header">
-    <div class="row">
-      <div class="col-lg-6">
+    <div class="dash-header">
+      <div class="">
         <span class="logo">Test Your Skill</span>
       </div>
       <?php
@@ -49,7 +51,14 @@
         ;
 
         include_once 'dbConnection.php';
-        echo '<span class="pull-right top title1" ><span class="log1"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;&nbsp;Hello,</span> <a href="account.php" class="log log1">' . $name . '</a>&nbsp;|&nbsp;<a href="logout.php?q=account.php" class="log"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>&nbsp;Signout</button></a></span>';
+        echo '<span class="pull-right top title1" >
+        <span class="log1">
+        <span><i class="bi bi-person-circle"></i>
+        </span>&nbsp;&nbsp;Hello,</span> 
+        <a href="account.php" class="log log1">'. $name .
+         '</a>|<a href="logout.php?q=account.php" class="log">
+         <span class="glyphicon glyphicon-log-out" aria-hidden="true">
+         </span>&nbsp;Signout</button></a></span>';
       } ?>
 
     </div>

@@ -14,6 +14,8 @@ body {
 .bg1 {
     /* background: url(../image/unp.jpg) center center/cover no-repeat; */
     min-height: 100vh;
+    max-width: 900px;
+    margin: auto;
 
 }
 
@@ -27,13 +29,50 @@ body {
     src: url('../fonts/gothics.ttf');
 }
 
-.panel {
+.index-panel{
     border-color: #eee;
     max-width: 500px;
+    background-color: #fff;
     margin: 40px auto;
     padding: 20px 20px;
     font: 15px "Century Gothic", "Times Roman", sans-serif;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.panel {
+    border-color: #eee;
+    max-width: 750px;
+    margin: 40px auto;
+    padding: 20px 20px;
+    font: 15px "Century Gothic", "Times Roman", sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.feedback-panel{
+    border-color: #eee;
+    background-color: #fff;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px 20px;
+    font: 15px "Century Gothic", "Times Roman", sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.feedback-btn{
+    background-color: #8780ec;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+    border: none;
+}
+
+.admin-btn{
+    background-color: #8780ec;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+    border: none;
 }
 
 .title {
@@ -46,7 +85,7 @@ body {
 }
 
 .header .header-inside {
-    padding: 10px 23px;
+    padding: 12px 23px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -55,33 +94,33 @@ body {
 .header div .logo {
     font-family: inherit;
     font-size: 19px;
-    color: #9F98FF;
+    color: #000000;
     /* margin: 15px; */
     font-weight: 600;
 }
 
 .logo img {
-    width: 50px;
+    width: 120px;
 }
 
 .title1,
 i {
-    font: 16px "Century Gothic", "Times Roman", sans-serif;
+    font: 15px "Century Gothic", "Times Roman", sans-serif;
     background-color: transparent;
     font-weight: 500;
 }
 
 .title2 {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 
 .sub1 {
-    color: #202020;
+    color: #000000;
     background: rgb(255, 255, 255);
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 
@@ -134,12 +173,12 @@ hr {
 }
 
 .top {
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 .log1 {
     font: 15px 'Ubuntu', sans-serif;
-    color: orange;
+    color: rgb(0, 0, 0);
     margin-left: 10px;
 }
 
@@ -147,16 +186,15 @@ hr {
     margin: 10px;
     margin-right: 60px;
     margin-left: 5px;
-    color: orange;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 20px;
     font-size: 15px;
 }
 
 .log:hover {
-    color: #9acd32;
-    border-top: 2px solid;
-    border-color: orange;
+    color: #000000;
+    border-color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
@@ -172,12 +210,23 @@ hr {
 }
 
 
-
-.feedback-header {
-    padding: 10px 23px;
+.account-header{
+    width: 100%;
+    padding: 15px 23px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #fff;
+}
+
+
+.feedback-header {
+    padding: 13px 23px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #dbdbdb;
+    background-color: #fff;
 
 }
 
@@ -189,4 +238,11 @@ hr {
     color: #9F98FF;
     /* margin: 15px; */
     font-weight: 600;
+}
+
+.dash-header{
+    padding: 12px 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

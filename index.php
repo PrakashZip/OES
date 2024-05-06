@@ -39,7 +39,7 @@
     <div class="header-inside">
 
       <div>
-        <span class="logo"><img  src="image\logo.png"/>Test Your Skill</span>
+        <span class="logo">Test your Skill</span>
       </div>
 
 
@@ -116,7 +116,7 @@
     <div class="row">
 
       <div class="col-md-7"></div>
-      <div class=" panel">
+      <div class="index-panel">
         <!-- sign in form begins -->
         <form class="form-horizontal" name="form" action="sign.php?q=account.php" onSubmit="return validateForm()"
           method="POST">
@@ -288,7 +288,7 @@
                   <input type="password" name="password" maxlength="15" placeholder="Password" class="form-control" />
                 </div>
                 <div class="form-group" align="center">
-                  <input type="submit" name="login" value="Login" class="btn btn-primary" />
+                  <input type="submit" name="login" value="Login" class="admin-btn" />
                 </div>
               </form>
             </div>
