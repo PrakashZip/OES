@@ -39,16 +39,16 @@
     <div class="header-inside">
 
       <div>
-        <span class="logo">Test your Skill</span>
+        <span class="logo">
+          <!-- <img style="width:90px" src="image\zeroip.webp"/> -->
+        <img src="image\logo.png"/></span>
       </div>
 
 
       <div class="">
         <a href="#" class="pull-right btn sub1" data-toggle="modal" data-target="#myModal">
-          <!-- <span class="glyphicon glyphicon-log-in" aria-hidden="true"> -->
-
-          </span>&nbsp;
-          <span class="title1">
+        
+          <span class="index-signin">
             <i class="bi bi-box-arrow-in-right"></i>
             Sign in
           </span>
@@ -62,7 +62,8 @@
           <div class="modal-content title1">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                  aria-hidden="true">&times;</span></button>
+                  aria-hidden="true">&times;</span>'
+                </button>
               <h4 class="modal-title title1"><span style="color:orange">Log In</span></h4>
             </div>
 
@@ -77,7 +78,7 @@
                   <div class="form-group">
                     <label class="col-md-3 control-label" for="email"></label>
                     <div class="col-md-6">
-                      <input id="email" name="email" placeholder="Enter your email-id" class="form-control input-md"
+                      <input id="email" name="email" placeholder="Enter your email" class="form-control input-md"
                         type="email">
 
                     </div>
@@ -112,11 +113,15 @@
 
 
 
-  <div class="bg1">
-    <div class="row">
+  <div class="index-bg1">
+    
+    <div class="row index-main-box">
 
-      <div class="col-md-7"></div>
-      <div class="index-panel">
+      <div class="col-md-6 index-bg-image">
+         <img class="img-fluid" src="image\4119036.jpg"/>
+      </div>
+
+      <div class="col-md-6 index-panel">
         <!-- sign in form begins -->
         <form class="form-horizontal" name="form" action="sign.php?q=account.php" onSubmit="return validateForm()"
           method="POST">
@@ -201,19 +206,24 @@
             <div class="form-group">
               <label class="col-md-12 control-label" for=""></label>
               <div class="col-md-12">
-                <input type="submit" class="sub" value="sign up" class="btn btn-primary" />
+                <input type="submit" class="sub" value="sign up" class="btn" />
               </div>
             </div>
 
           </fieldset>
         </form>
-      </div><!--col-md-6 end-->
+      </div>
     </div>
-  </div>
+
   </div><!--container end-->
 
+
+
   <!--Footer start-->
-  <div class="row footer">
+ <footer class="footer">
+  
+
+ <div class="footer-link">
     <div class="col-md-3 box">
       <a href="http://prakashzip.com" target="_blank">About us</a>
     </div>
@@ -226,7 +236,23 @@
     <div class="col-md-3 box">
       <a href="feedback.php" target="_blank">Feedback</a>
     </div>
-  </div>
+ </div>
+
+
+    <div>
+      <p class="footer-copyright">OES © 2020 all right reserved</p>
+    </div>
+
+</footer>
+
+
+
+
+
+
+
+
+
   <!-- Modal For Developers-->
   <div class="modal fade title1" id="developers">
     <div class="modal-dialog">

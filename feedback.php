@@ -30,7 +30,9 @@
   <div class="feedback-header">
 
     <div class="">
-      <span class="logo">Test Your Skill</span>
+      <span class="logo">
+      <img src="image\logo.png"/></span>
+      </span>
     </div>
 
     <div class="">
@@ -62,6 +64,9 @@
 
     </div>
   </div>
+
+
+
 
   <!--sign in modal start-->
   <div class="modal fade" id="myModal">
@@ -111,83 +116,111 @@
 
   <!--header end-->
 
-  <div class="bg1">
+  <div class="">
     <div class="row">
-      <div class="col-md-3"></div>
-      <div class=" feedback-panel" style=" min-height:430px;">
-        <h4 align="left" style="color:#000066">FEEDBACK/REPORT A PROBLEM</h4>
-        <div style="font-size:14px">
-          <?php if (@$_GET['q'])
-            echo '<span style="font-size:18px;"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>&nbsp;' . @$_GET['q'] . '</span>';
-          else {
-            echo ' You can send us your feedback through e-mail on the following e-mail id:<br />
-            <div class="row">
-                 <div class="col-md-1"></div>
-                       <div class="col-md-10">
-                              <a href="mailto:contact@satyaprakash.me" style="color:#000000">contact@satyaprakash.me</a><br /><br />
+      
+      <div class=" feedback-panel row">
+
+              <div class="col-md-6 feedback-image">
+                <img src="image\feedback.jpg" alt="">
+              </div>
+
+
+              <div class="col-md-6">
+                
+                    <h4 class="feedback-head">Feedback or report a problem</h4>
+                   <div>
+                      <?php if (@$_GET['q'])
+                            echo '<span style="font-size:23px;"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>&nbsp;' . @$_GET['q'] . '</span>';
+                           else {
+                               echo ' You can send us your feedback through e-mail on the following e-mail id:<br/>
+
+
+                          <div class="row">
+                              <div class="col-md-7"></div>
+                                 <div class="col-md-10">
+                              <a href="mailto:contact@satyaprakash.me" style="color:#000000">contact@satyaprakash.me</a>
                         </div>
-                 <div class="col-md-1">
-             </div>
-            </div>
+                          <div class="col-md-1">
+                       </div>
 
-<p align="left" class="pb-5" >Or you can directly submit your feedback by filling the enteries below:-</p>
+             
+                     </div>
 
-<form role="form"  method="post" action="feed.php?q=feedback.php">
-<div class="row">
-<div class="col-md-3"><b>Name:</b><br /><br /><br /><b>Subject:</b></div>
-<div class="col-md-9 mt-5">
-<!-- Text input-->
+                        <p align="left" >Or you can directly submit your feedback by filling the enteries below:-</p></br>
 
-<div class="form-group">
-  <input id="name" name="name" placeholder="Enter your name" class="form-control input-md" type="text"><br />    
-   <input id="name" name="subject" placeholder="Enter subject" class="form-control input-md" type="text">    
+                    <form role="form"  method="post" action="feed.php?q=feedback.php"  class="pt-3">
+                      <div class="row">
+                      <div class="col-md-12 mt-5">
+                      <!-- Text input-->
 
-</div>
-</div>
-</div><!--End of row-->
+                      <div class="form-group pt-4">
+                        <input id="name" name="name" placeholder="Enter your name" class="form-control input-md" type="text"><br />    
+                         <input id="name" name="subject" placeholder="Enter subject" class="form-control input-md" type="text">    
 
-<div class="row">
-<div class="col-md-3"><b>E-Mail address:</b></div>
-<div class="col-md-9">
-<!-- Text input-->
-<div class="form-group">
-  <input id="email" name="email" placeholder="Enter your email-id" class="form-control input-md" type="email">    
- </div>
-</div>
-</div><!--End of row-->
+                        </div>
+                        </div>
+                        </div><!--End of row-->
 
-<div class="form-group"> 
-<textarea rows="5" cols="8" name="feedback" class="form-control" placeholder="Write feedback here..."></textarea>
-</div>
-<div class="form-group" align="center">
-<input type="submit" name="submit" value="Submit" class="feedback-btn " />
-</div>
-</form>';
+                        <div class="row">
+                        <div class="col-md-12">
+                        <!-- Text input-->
+                        <div class="form-group">
+                          <input id="email" name="email" placeholder="Enter your email-id" class="form-control input-md" type="email">    
+                         </div>
+                        </div>
+                        </div><!--End of row-->
+
+                        <div class="form-group"> 
+                        <textarea rows="3" cols="6" name="feedback" class="form-control" placeholder="Write feedback here..."></textarea>
+                        </div>
+                        <div class="form-group" align="center">
+                        <input type="submit" name="submit" value="Submit" class="feedback-btn " />
+                        </div>
+                        </form>';
           } ?>
-        </div><!--col-md-6 end-->
-        <div class="col-md-3"></div>
+        </div>
+        
+              </div>
       </div>
     </div>
   </div>
-  </div><!--container end-->
+  </div>
+
+
+
+
 
 
   <!--Footer start-->
-  <div class="row footer">
-    <div class="col-md-3 box">
-      <a href="http://satyaprakash.me" target="_blank">About us</a>
-    </div>
-    <div class="col-md-3 box">
-      <a href="#" data-toggle="modal" data-target="#login">Admin Login</a>
-    </div>
-    <div class="col-md-3 box">
-      <a href="#" data-toggle="modal" data-target="#developers">Developers</a>
+  <footer class="footer">
 
-    </div>
-    <div class="col-md-3 box">
-      <a href="feedback.php" target="_blank">Feedback</a>
-    </div>
+<div class="footer-link">
+  <div class="col-md-3 box">
+    <a href="http://prakashzip.com" target="_blank">About us</a>
   </div>
+  <div class="col-md-3 box">
+    <a href="#" data-toggle="modal" data-target="#login">Admin Login</a>
+  </div>
+  <div class="col-md-3 box">
+    <a href="#" data-toggle="modal" data-target="#developers">Developers</a>
+  </div>
+  <div class="col-md-3 box">
+    <a href="feedback.php" target="_blank">Feedback</a>
+  </div>
+</div>
+
+
+  <div>
+    <p class="footer-copyright">OES © 2020 all right reserved</p>
+  </div>
+
+</footer>
+
+
+
+
+  
   <!-- Modal For Developers-->
   <div class="modal fade title1" id="developers">
     <div class="modal-dialog">
