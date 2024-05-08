@@ -33,11 +33,11 @@
     });</script>
 </head>
 
-<body style="background:#eee;">
+<body>
   <div class="header">
     <div class="dash-header">
       <div class="">
-        <span class="logo">Test Your Skill</span>
+        <span class="logo"><img src="image\logo.png"/></span>
       </div>
       <?php
       include_once 'dbConnection.php';
@@ -56,7 +56,7 @@
         <span><i class="bi bi-person-circle"></i>
         </span>&nbsp;&nbsp;Hello,</span> 
         <a href="account.php" class="log log1">'. $name .
-         '</a>|<a href="logout.php?q=account.php" class="log">
+         '</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="logout.php?q=account.php" class="log">
          <span class="glyphicon glyphicon-log-out" aria-hidden="true">
          </span>&nbsp;Signout</button></a></span>';
       } ?>
@@ -66,10 +66,10 @@
   <!-- admin start-->
 
   <!--navigation menu-->
-  <nav class="navbar navbar-default title1">
-    <div class="container-fluid">
+  <nav class="navbar">
+    <div class="dash-container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
+      <div class="navbar-header account-navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
           data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
           <span class="sr-only">Toggle navigation</span>
@@ -77,7 +77,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="dash.php?q=0"><b>Dashboard</b></a>
+        <a class="navbar-brand dash-logo" href="dash.php?q=0">Dashboard</a>
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -109,7 +109,10 @@
     </div><!-- /.container-fluid -->
   </nav>
   <!--navigation menu closed-->
-  <div class="container"><!--container start-->
+
+
+
+  <div class="dashboard-max-width"><!--container start-->
     <div class="row">
       <div class="col-md-12">
         <!--home start-->

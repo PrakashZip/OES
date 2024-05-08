@@ -31,11 +31,13 @@ include_once 'dbConnection.php';
 ?>
 
 <body>
-  <div class="header">
+  <div class="account-header1">
     <div class="account-header">
+
       <div class="">
-        <span class="logo">Test Your Skill</span>
+        <span class="logo">   <img src="image\logo.png"/></span>
       </div>
+
       <div class="col-md-offset-2">
         <?php
         include_once 'dbConnection.php';
@@ -48,18 +50,20 @@ include_once 'dbConnection.php';
           $email = $_SESSION['email'];
 
           include_once 'dbConnection.php';
-          echo '<span class="pull-right top title1" >
+          echo '<span class=" title1" >
           <span class="log1">
           <i class="bi bi-person-circle"></i>
-          &nbsp;&nbsp;&nbsp;&nbsp;Hello,</span> <a href="account.php?q=1" class="log log1">' . $name . '</a>&nbsp;|&nbsp;<a href="logout.php?q=account.php" class="log"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>&nbsp;Signout</button></a></span>';
+          &nbsp;&nbsp;Hello,</span> <a href="account.php?q=1" class="log log1">' . $name . '</a>&nbsp; &nbsp;|&nbsp; &nbsp;<a href="logout.php?q=account.php" class="log"><i class="bi bi-box-arrow-right"></i>&nbsp;&nbsp;Signout</button></a></span>';
         } ?>
       </div>
     </div>
   </div>
+
+  
   <div class="bg">
 
     <!--navigation menu-->
-    <nav class="navbar navbar-default title1">
+    <nav class="navbar account-navbar">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -70,38 +74,37 @@ include_once 'dbConnection.php';
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"><b>LEOTEST</b></a>
+          <a class="navbar-brand" href="index.php"><b>OesTest</b></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li <?php if (@$_GET['q'] == 1)
-              echo 'class="active"'; ?>><a href="account.php?q=1"><span
-                  class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp;Home<span
+              echo 'class="active"'; ?>><a href="account.php?q=1"><i class="bi bi-house-door"></i>&nbsp;Home<span
                   class="sr-only">(current)</span></a></li>
             <li <?php if (@$_GET['q'] == 2)
-              echo 'class="active"'; ?>><a href="account.php?q=2"><span
-                  class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>&nbsp;History</a></li>
+              echo 'class="active"'; ?>><a href="account.php?q=2"><i class="bi bi-card-list"></i>&nbsp;History</a></li>
             <li <?php if (@$_GET['q'] == 3)
-              echo 'class="active"'; ?>><a href="account.php?q=3"><span
-                  class="glyphicon glyphicon-stats" aria-hidden="true"></span>&nbsp;Ranking</a></li>
-            <li class="pull-right"> <a href="logout.php?q=account.php"><span class="glyphicon glyphicon-log-out"
-                  aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;&nbsp;Signout</a></li>
+              echo 'class="active"'; ?>><a href="account.php?q=3"><i class="bi bi-bar-chart"></i>&nbsp;Ranking</a></li>
+            <li class="pull-right"> <a href="logout.php?q=account.php"><i class="bi bi-box-arrow-right"></i>&nbsp;&nbsp;&nbsp;Signout</a></li>
           </ul>
           <form class="navbar-form navbar-left" role="search">
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Enter tag ">
+              <input type="text" class="account-form-control" placeholder="Enter tag ">
             </div>
-            <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"
+            <button type="submit" class="btn btnn-success"><span class="glyphicon glyphicon-search"
                 aria-hidden="true"></span>&nbsp;Search</button>
           </form>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav><!--navigation menu closed-->
+
+
+
     <div class="container"><!--container start-->
       <div class="row">
-        <div class="col-md-12">
+        <div class="account-max-width">
 
           <!--home start-->
           <?php if (@$_GET['q'] == 1) {
@@ -257,21 +260,44 @@ var countdownTimer = setInterval('secondPassed()', 1000);
       </div>
     </div>
   </div>
-  <!--Footer start-->
-  <div class="row footer">
-    <div class="col-md-3 box">
-      <a href="http://www.projectworlds.in/online-examination" target="_blank">About us</a>
-    </div>
-    <div class="col-md-3 box">
-      <a href="#" data-toggle="modal" data-target="#login">Admin Login</a>
-    </div>
-    <div class="col-md-3 box">
-      <a href="#" data-toggle="modal" data-target="#developers">Developers</a>
-    </div>
-    <div class="col-md-3 box">
-      <a href="feedback.php" target="_blank">Feedback</a>
-    </div>
+
+
+
+
+
+
+    <!--Footer start-->
+ <footer class="footer">
+  
+
+  <div class="footer-link">
+     <div class="col-md-3 box">
+       <a href="http://prakashzip.com" target="_blank">About us</a>
+     </div>
+     <div class="col-md-3 box">
+       <a href="#" data-toggle="modal" data-target="#login">Admin Login</a>
+     </div>
+     <div class="col-md-3 box">
+       <a href="#" data-toggle="modal" data-target="#developers">Developers</a>
+     </div>
+     <div class="col-md-3 box">
+       <a href="feedback.php" target="_blank">Feedback</a>
+     </div>
   </div>
+ 
+ 
+     <div>
+       <p class="footer-copyright">OES © 2020 all right reserved</p>
+     </div>
+ 
+ </footer>
+
+
+
+
+
+
+
   <!-- Modal For Developers-->
   <div class="modal fade title1" id="developers">
     <div class="modal-dialog">

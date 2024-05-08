@@ -13,7 +13,11 @@
   <!-- Option 1: Include in HTML -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="css/font.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <script src="js/jquery.js" type="text/javascript"></script>
+
 
   <script src="js/bootstrap.min.js" type="text/javascript"></script>
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
@@ -46,9 +50,9 @@
 
 
       <div class="">
-        <a href="#" class="pull-right btn sub1" data-toggle="modal" data-target="#myModal">
-        
-          <span class="index-signin">
+        <a href="#" class="pull-right index-signin" data-toggle="modal" data-target="#myModal">
+          
+          <span class="">
             <i class="bi bi-box-arrow-in-right"></i>
             Sign in
           </span>
@@ -64,7 +68,7 @@
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                   aria-hidden="true">&times;</span>'
                 </button>
-              <h4 class="modal-title title1"><span style="color:orange">Log In</span></h4>
+              <h4 class="modal-title title1"><span style="color:black">Sign In</span></h4>
             </div>
 
 
@@ -98,8 +102,8 @@
 
 
             <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="submit" class="btn btn-primary">Log in</button>
+              <button type="button" class="btn btn-dark-index" data-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-success-index">Log in</button>
               </fieldset>
               </form>
             </div>
@@ -260,30 +264,34 @@
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
               class="sr-only">Close</span></button>
-          <h4 class="modal-title" style="font-family:'typo' "><span style="color:orange">Developers</span></h4>
+          <h4 class="modal-title"><span style="color:black">Developers</span></h4>
         </div>
 
         <div class="modal-body">
           <p>
           <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-5">
               <img src="image/CAM00121.jpg" width=100 height=100 alt="Prakash " class="img-rounded">
             </div>
-            <div class="col-md-5">
-              <a href="#" style="color:#202020; font-family:'typo' ;font-size:16px" class="title1">Contact Me</h4>
-                <h4 style="font-family:'typo' ">satyapraksah.od@gmail.com</h4>
-                <h4 style="font-family:'typo' ">Lovely professional University, Phagwara</h4>
+            <div class="col-md-3">
+              <a href="#" style="color:#202020;font-size:15px" class="navbar-brand">
+                <h5>Contact Me</h5>
+                <h5>satyapraksah.od@gmail.com</h5>
+                <h5>Lovely professional University, Phagwara</h5>
+                </a>
             </div>
           </div>
 
-          <div class="row mt-5">
-            <div class="col-md-4">
+          <div class="row pt-5">
+            <div class="col-md-5">
               <img src="image\hamad3.jpg" width=100 height=100 alt="Prakash " class="img-rounded">
             </div>
-            <div class="col-md-5">
-              <a href="#" style="color:#202020; font-family:'typo' ;font-size:16px" class="title1">Contact Me</h4>
-                <h4 style="font-family:'typo' ">hamadsaif.dev@gmail.com</h4>
-                <h4 style="font-family:'typo' ">utkal University, BBSR</h4>
+            <div class="col-md-3">
+              <a href="#" style="color:#202020;font-size:15px" class="navbar-brand">
+                <h5>Contact Me</h5>
+                <h5>hamadsaif.dev@gmail.com</h5>
+                <h5>utkal University, BBSR</h5>
+                </a>
             </div>
           </div>
           </p>
@@ -300,7 +308,7 @@
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
               class="sr-only">Close</span></button>
-          <h4 class="modal-title"><span style="color:orange;font-family:'typo' ">LOGIN</span></h4>
+          <h4 class="modal-title"><span style="color:black">LOGIN</span></h4>
         </div>
         <div class="modal-body title1">
           <div class="row">

@@ -44,18 +44,18 @@
       include_once 'dbConnection.php';
       session_start();
       if ((!isset($_SESSION['email']))) {
-        echo '<a href="#" class="pull-right sub1 btn title3" data-toggle="modal" data-target="#myModal">
+        echo '<a href="#" class="pull-right btn" style="color:black" data-toggle="modal" data-target="#myModal">
        
         <i class="bi bi-box-arrow-in-right"></i>
         &nbsp;Signin</a>&nbsp;';
       } else {
-        echo '<a href="logout.php?q=feedback.php" class="pull-right sub1 btn title3">
+        echo '<a href="logout.php?q=feedback.php" class="pull-right">
         <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>
         &nbsp;Signout</a>&nbsp;';
       }
       ?>
 
-      <a href="index.php" class="pull-right btn sub1 title3">
+      <a href="index.php" class="btn" style="color:black">
         <!-- <span class="glyphicon glyphicon-home"
           aria-hidden="true"></span> -->
           <i class="bi bi-house"></i>
@@ -75,7 +75,7 @@
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
               aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title title1"><span style="color:orange">Log In</span></h4>
+          <h4 class="modal-title title1"><span style="color:black">Sign In</span></h4>
         </div>
         <div class="modal-body">
           <form class="form-horizontal" action="login.php?q=index.php" method="POST">
@@ -104,8 +104,8 @@
 
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="submit" class="btn btn-primary">Log in</button>
+          <button type="button" class="btn btn-dark-index" data-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-success-index">Log in</button>
           </fieldset>
           </form>
         </div>
@@ -129,7 +129,7 @@
               <div class="col-md-6">
                 
                     <h4 class="feedback-head">Feedback or report a problem</h4>
-                   <div>
+                   <div class="feedback-div">
                       <?php if (@$_GET['q'])
                             echo '<span style="font-size:23px;"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>&nbsp;' . @$_GET['q'] . '</span>';
                            else {
