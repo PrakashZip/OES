@@ -52,7 +52,8 @@ include_once 'dbConnection.php';
           include_once 'dbConnection.php';
           echo '<span class=" title1" >
           <span class="log1">
-          <i class="bi bi-person-circle"></i>
+         
+          <img src="image\user.png" class="account-user-icon alt="">
           &nbsp;&nbsp;Hello,</span> <a href="account.php?q=1" class="log log1">' . $name . '</a>&nbsp; &nbsp;|&nbsp; &nbsp;<a href="logout.php?q=account.php" class="log"><i class="bi bi-box-arrow-right"></i>&nbsp;&nbsp;Signout</button></a></span>';
         } ?>
       </div>

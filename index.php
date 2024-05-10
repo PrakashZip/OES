@@ -53,7 +53,8 @@
         <a href="#" class="pull-right index-signin" data-toggle="modal" data-target="#myModal">
           
           <span class="">
-            <i class="bi bi-box-arrow-in-right"></i>
+            <!-- <i class="all-icon bi bi-box-arrow-in-right"></i> -->
+            <img src="image\exit.png" alt=""/>&nbsp;
             Sign in
           </span>
         </a>
@@ -103,7 +104,7 @@
 
             <div class="modal-footer">
               <button type="button" class="btn btn-dark-index" data-dismiss="modal">Close</button>
-              <button type="submit" class="btn btn-success-index">Log in</button>
+              <button type="submit" class="btn btn-success-index">Sign in</button>
               </fieldset>
               </form>
             </div>
@@ -308,7 +309,7 @@
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
               class="sr-only">Close</span></button>
-          <h4 class="modal-title"><span style="color:black">LOGIN</span></h4>
+          <h4 class="modal-title"><span style="color:black">Sign in</span></h4>
         </div>
         <div class="modal-body title1">
           <div class="row">
@@ -322,7 +323,7 @@
                   <input type="password" name="password" maxlength="15" placeholder="Password" class="form-control" />
                 </div>
                 <div class="form-group" align="center">
-                  <input type="submit" name="login" value="Login" class="admin-btn" />
+                  <input type="submit" name="login" value="Sign in" class="admin-btn btn-success-index" />
                 </div>
               </form>
             </div>

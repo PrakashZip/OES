@@ -52,13 +52,14 @@
 
         include_once 'dbConnection.php';
         echo '<span class="pull-right top title1" >
-        <span class="log1">
-        <span><i class="bi bi-person-circle"></i>
+        <span class="log1"><span>
+        <img src="image\user.png"/>
         </span>&nbsp;&nbsp;Hello,</span> 
         <a href="account.php" class="log log1">'. $name .
-         '</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="logout.php?q=account.php" class="log">
-         <span class="glyphicon glyphicon-log-out" aria-hidden="true">
-         </span>&nbsp;Signout</button></a></span>';
+         '</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+         <a href="logout.php?q=account.php" class="log">
+         <img src="image\log-out.png"/>
+         &nbsp;Signout</button></a></span>';
       } ?>
 
     </div>
@@ -101,8 +102,9 @@
 
             </ul>
           </li>
-          <li class="pull-right"> <a href="logout.php?q=account.php"><span class="glyphicon glyphicon-log-out"
-                aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;&nbsp;Signout</a></li>
+          <li class="pull-right"> <a href="logout.php?q=account.php" class="log">
+          <img src="image\log-out.png"/>
+          &nbsp;Signout</a></li>
 
         </ul>
       </div><!-- /.navbar-collapse -->

@@ -44,21 +44,21 @@
       include_once 'dbConnection.php';
       session_start();
       if ((!isset($_SESSION['email']))) {
-        echo '<a href="#" class="pull-right btn" style="color:black" data-toggle="modal" data-target="#myModal">
+        echo '<a href="#" class="pull-right btn feedback-icon2" style="color:black" data-toggle="modal" data-target="#myModal">
        
-        <i class="bi bi-box-arrow-in-right"></i>
+        <img src="image\exit.png" alt=""/>
         &nbsp;Signin</a>&nbsp;';
       } else {
-        echo '<a href="logout.php?q=feedback.php" class="pull-right">
-        <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>
+        echo '<a href="logout.php?q=feedback.php" class="pull-right feedback-icon2" style="color:black; text-decoration="none";>
+        <img src="image\log-out.png" alt=""/>
         &nbsp;Signout</a>&nbsp;';
       }
       ?>
 
-      <a href="index.php" class="btn" style="color:black">
+      <a href="index.php" class="btn feedback-icon1" style="color:black">
         <!-- <span class="glyphicon glyphicon-home"
           aria-hidden="true"></span> -->
-          <i class="bi bi-house"></i>
+          <img src="image\home.png" alt=""/>
           &nbsp;Home
       </a>&nbsp;
 
@@ -105,7 +105,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-dark-index" data-dismiss="modal">Close</button>
-          <button type="submit" class="btn btn-success-index">Log in</button>
+          <button type="submit" class="btn btn-success-index">sign in</button>
           </fieldset>
           </form>
         </div>
@@ -131,9 +131,9 @@
                     <h4 class="feedback-head">Feedback or report a problem</h4>
                    <div class="feedback-div">
                       <?php if (@$_GET['q'])
-                            echo '<span style="font-size:23px;"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>&nbsp;' . @$_GET['q'] . '</span>';
-                           else {
-                               echo ' You can send us your feedback through e-mail on the following e-mail id:<br/>
+                        echo '<span style="font-size:23px;"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>&nbsp;' . @$_GET['q'] . '</span>';
+                      else {
+                        echo ' You can send us your feedback through e-mail on the following e-mail id:<br/>
 
 
                           <div class="row">
@@ -178,7 +178,7 @@
                         <input type="submit" name="submit" value="Submit" class="feedback-btn " />
                         </div>
                         </form>';
-          } ?>
+                      } ?>
         </div>
         
               </div>
@@ -270,7 +270,7 @@
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
               class="sr-only">Close</span></button>
-          <h4 class="modal-title"><span style="color:orange;font-family:'typo' ">LOGIN</span></h4>
+          <h4 class="modal-title"><span>Sign in</span></h4>
         </div>
         <div class="modal-body title1">
           <div class="row">
@@ -284,7 +284,7 @@
                   <input type="password" name="password" maxlength="15" placeholder="Password" class="form-control" />
                 </div>
                 <div class="form-group" align="center">
-                  <input type="submit" name="login" value="Login" class="btn btn-primary" />
+                  <input type="submit" name="login" value="sign in" class="btn btn-success-index" />
                 </div>
               </form>
             </div>
