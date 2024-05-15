@@ -269,26 +269,31 @@ var countdownTimer = setInterval('secondPassed()', 1000);
 
     <!--Footer start-->
  <footer class="footer">
+
+
+ <div class="d-flex justify-content-center footer-img">
+ <img src="image\zeroip-logo.png" alt="">
+ </div>
   
 
   <div class="footer-link">
      <div class="col-md-3 box">
-       <a href="http://prakashzip.com" target="_blank">About us</a>
+       <a href="aboutus.php">About us</a>
      </div>
      <div class="col-md-3 box">
        <a href="#" data-toggle="modal" data-target="#login">Admin Login</a>
      </div>
      <div class="col-md-3 box">
-       <a href="#" data-toggle="modal" data-target="#developers">Developers</a>
+       <a href="aboutus.php">Developers</a>
      </div>
      <div class="col-md-3 box">
-       <a href="feedback.php" target="_blank">Feedback</a>
+       <a href="feedback.php">Feedback</a>
      </div>
   </div>
  
  
      <div>
-       <p class="footer-copyright">OES © 2020 all right reserved</p>
+     <p class="footer-copyright">copyright © 2024 by ZEROIP</p>
      </div>
  
  </footer>
