@@ -31,7 +31,9 @@
 
     <div class="">
       <span class="logo">
-      <img src="image\logo.png"/></span>
+     <a href="index.php">
+       <img src="image\logo.png"/>
+      </a>
       </span>
     </div>
 

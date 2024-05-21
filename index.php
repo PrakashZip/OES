@@ -45,7 +45,10 @@
       <div>
         <span class="logo">
           <!-- <img style="width:90px" src="image\zeroip.webp"/> -->
-        <img src="image\logo.png"/></span>
+          <a href="index.php">
+          <img src="image\logo.png"/>
+          </a>
+      </span>
       </div>
 
 

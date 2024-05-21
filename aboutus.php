@@ -37,30 +37,9 @@
 
             <div class="col-xl-3 col-md-5 d-flex" data-aos="fade-up" data-aos-delay="100">
                 <div class="member">
-                    <img src="image/team-1.jpg" class="img-fluid" alt="">
-                    <h4>Hamad Saif</h4>
-                    <span>Web Developer</span>
-                    <button class="btn-dark-button btn-dark"><a href="https://hamadzip.vercel.app/">Visit website</a></button>
-                    <div class="social">
-                        <a href="https://www.linkedin.com/in/hamadzip/"><i class="bi bi-linkedin"></i></a>
-                        <a href="https://www.facebook.com/hamad.saif.146/"><i class="bi bi-facebook"></i></a>
-                        <a href="https://github.com/HamadCoder2"><i class="bi bi-github"></i></a>
-                        <a href="https://www.instagram.com/hamadzip.co/"><i class="bi bi-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-xl-3 col-md-5 d-flex" data-aos="fade-up" data-aos-delay="100">
-                <img src="image/middle.png" class="img-fluid" alt="">
-            </div>
-
-
-            <div class="col-xl-3 col-md-5 d-flex" data-aos="fade-up" data-aos-delay="100">
-                <div class="member">
-                    <img src="image/team-1.jpg" class="img-fluid" alt="">
-                    <h4>Satya Prakash Sahoo</h4>
-                    <span>Cloud Engeenier</span>
+                    <img src="image/Satya Prakash.webp" class="img-fluid" alt="">
+                    <h4>Satya Prakash</h4>
+                    <span>Software Engineer (SWE)</span>
                     <button class="btn-dark-button btn-dark"><a href="https://prakashzip.com">Visit website</a></button>
                     <div class="social">
                         <a href="https://www.linkedin.com/in/prakashzip/"><i class="bi bi-linkedin"></i></a>
@@ -71,12 +50,33 @@
                 </div>
             </div>
 
+
+            <div class="col-xl-3 col-md-5 d-flex" data-aos="fade-up" data-aos-delay="100">
+                <img src="image\contributors.webp" class="img-fluid" alt="" style="width:250px;height:250px; margin-top:80px;">
+            </div>
+
+
+            <div class="col-xl-3 col-md-5 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+                    <img src="image/Hamad Saif.webp" class="img-fluid" alt="">
+                    <h4>Hamad Saif</h4>
+                    <span>Software Developer (SDE)</span>
+                    <button class="btn-dark-button btn-dark"><a href="https://hamadzip.vercel.app/">Visit website</a></button>
+                    <div class="social">
+                        <a href="https://www.linkedin.com/in/hamadzip/"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://www.facebook.com/hamad.saif.146/"><i class="bi bi-facebook"></i></a>
+                        <a href="https://github.com/HamadCoder2"><i class="bi bi-github"></i></a>
+                        <a href="https://www.instagram.com/hamadzip.co/"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
 
     <footer>
-        <p class="p-3 fs-5 text-center footer-copyright">copyright © 2024 by ZEROIP</p>
+        <p class="p-3 fs-5 text-center footer-copyright">copyright © 2024 by ZEROIP.</p>
     </footer>
 </body>
 
