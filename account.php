@@ -127,7 +127,7 @@ include_once 'dbConnection.php';
 	<td><b><a href="account.php?q=quiz&step=2&eid=' . $eid . '&n=1&t=' . $total . '" class="pull-right btn sub1" style="margin:0px;background:#99cc32"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span>&nbsp;<span class="title1"><b>Start</b></span></a></b></td></tr>';
               } else {
                 echo '<tr style="color:#99cc32"><td>' . $c++ . '</td><td>' . $title . '&nbsp;<span title="This quiz is already solve by you" class="glyphicon glyphicon-ok" aria-hidden="true"></span></td><td>' . $total . '</td><td>' . $sahi * $total . '</td><td>' . $time . '&nbsp;min</td>
-	<td><b><a href="update.php?q=quizre&step=25&eid=' . $eid . '&n=1&t=' . $total . '" class="pull-right btn sub1" style="margin:0px;background:red"><span class="glyphicon glyphicon-repeat" aria-hidden="true"></span>&nbsp;<span class="title1"><b>Restart</b></span></a></b></td></tr>';
+	<td><b><a href="update.php?q=quizre&step=25&eid=' . $eid . '&n=1&t=' . $total . '" class="pull-right btn sub1" style="margin:0px;background:black; color:white"><span class="glyphicon glyphicon-repeat" aria-hidden="true"></span>&nbsp;<span class="title1"><b>Restart</b></span></a></b></td></tr>';
               }
             }
             $c = 0;
@@ -178,7 +178,7 @@ var countdownTimer = setInterval('secondPassed()', 1000);
               $optionid = $row['optionid'];
               echo '<input type="radio" name="ans" value="' . $optionid . '">' . $option . '<br /><br />';
             }
-            echo '<br /><button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span>&nbsp;Submit</button></form></div>';
+            echo '<br /><button type="submit" class="btn btn-dark"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span>&nbsp;Submit</button></form></div>';
             //header("location:dash.php?q=4&step=2&eid=$id&n=$total");
           }
           //result display
@@ -195,7 +195,7 @@ var countdownTimer = setInterval('secondPassed()', 1000);
               $qa = $row['level'];
               echo '<tr style="color:#66CCFF"><td>Total Questions</td><td>' . $qa . '</td></tr>
       <tr style="color:#99cc32"><td>right Answer&nbsp;<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span></td><td>' . $r . '</td></tr> 
-	  <tr style="color:red"><td>Wrong Answer&nbsp;<span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></td><td>' . $w . '</td></tr>
+	  <tr style="color:black"><td>Wrong Answer&nbsp;<span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></td><td>' . $w . '</td></tr>
 	  <tr style="color:#66CCFF"><td>Score&nbsp;<span class="glyphicon glyphicon-star" aria-hidden="true"></span></td><td>' . $s . '</td></tr>';
             }
             $q = mysqli_query($con, "SELECT * FROM rank WHERE  email='$email' ") or die('Error157');
@@ -214,7 +214,7 @@ var countdownTimer = setInterval('secondPassed()', 1000);
             $q = mysqli_query($con, "SELECT * FROM history WHERE email='$email' ORDER BY date DESC ") or die('Error197');
             echo '<div class="panel title">
 <table class="table table-striped title1" >
-<tr style="color:red"><td><b>S.N.</b></td><td><b>Quiz</b></td><td><b>Question Solved</b></td><td><b>Right</b></td><td><b>Wrong<b></td><td><b>Score</b></td>';
+<tr style="color:black"><td><b>S.N.</b></td><td><b>Quiz</b></td><td><b>Question Solved</b></td><td><b>Right</b></td><td><b>Wrong<b></td><td><b>Score</b></td>';
             $c = 0;
             while ($row = mysqli_fetch_array($q)) {
               $eid = $row['eid'];
@@ -237,7 +237,7 @@ var countdownTimer = setInterval('secondPassed()', 1000);
             $q = mysqli_query($con, "SELECT * FROM rank  ORDER BY score DESC ") or die('Error223');
             echo '<div class="panel title"><div class="table-responsive">
 <table class="table table-striped title1" >
-<tr style="color:red"><td><b>Rank</b></td><td><b>Name</b></td><td><b>Gender</b></td><td><b>College</b></td><td><b>Score</b></td></tr>';
+<tr style="color:white"><td><b>Rank</b></td><td><b>Name</b></td><td><b>Gender</b></td><td><b>College</b></td><td><b>Score</b></td></tr>';
             $c = 0;
             while ($row = mysqli_fetch_array($q)) {
               $e = $row['email'];

@@ -17,7 +17,7 @@
 
 <body>
     <div class="container-fluid-max">
-        <header class="d-flex flex-wrap justify-content-center">
+        <header class="d-flex flex-wrap justify-content-between">
             <a href="index.php" class="d-flex align-items-center  mb-md-0 me-md-auto text-dark text-decoration-none">
                 <img src="image\zeroip_logo11.png" class="about-logo" alt="">
             </a>

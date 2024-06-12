@@ -121,70 +121,97 @@
   <div class="">
     <div class="row">
       
-      <div class=" feedback-panel row">
+     
+    <div class="feedback-panel row">
+    <div class="col-md-6 feedback-image">
+        <img src="image/feedback.jpg" alt="">
+    </div>
 
-              <div class="col-md-6 feedback-image">
-                <img src="image\feedback.jpg" alt="">
-              </div>
+    <div class="col-md-6">
+        <h4 class="feedback-head">Feedback or report a problem</h4>
+        <div class="feedback-div">
+            <?php
+            if ($_SERVER["REQUEST_METHOD"] == "POST") {
+              // Retrieve and sanitize form inputs
+              $name = htmlspecialchars(trim($_POST['name']));
+              $subject = htmlspecialchars(trim($_POST['subject']));
+              $email = htmlspecialchars(trim($_POST['email']));
+              $feedback = htmlspecialchars(trim($_POST['feedback']));
 
+              // Initialize an array to store errors
+              $errors = [];
 
-              <div class="col-md-6">
-                
-                    <h4 class="feedback-head">Feedback or report a problem</h4>
-                   <div class="feedback-div">
-                      <?php if (@$_GET['q'])
-                        echo '<span style="font-size:23px;"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>&nbsp;' . @$_GET['q'] . '</span>';
-                      else {
-                        echo ' You can send us your feedback through e-mail on the following e-mail id:<br/>
+              // Validate inputs
+              if (empty($name)) {
+                $errors[] = "Name is required.";
+              }
+              if (empty($subject)) {
+                $errors[] = "Subject is required.";
+              }
+              if (empty($email)) {
+                $errors[] = "Email is required.";
+              } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                $errors[] = "Invalid email format.";
+              }
+              if (empty($feedback)) {
+                $errors[] = "Feedback is required.";
+              }
 
+              // Check if there are any errors
+              if (empty($errors)) {
+                // If no errors, display the thank you message
+                echo '<span style="font-size:23px;"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>&nbsp;Thank you for your feedback!</br></span>';
+              } else {
+                // Display errors
+                foreach ($errors as $error) {
+                  echo '<div style="color:red;">' . $error . '</div>';
+                }
+              }
+            }
 
-                          <div class="row">
-                              <div class="col-md-7"></div>
-                                 <div class="col-md-10">
-                              <a href="mailto:contact@satyaprakash.me" style="color:#000000">contact@satyaprakash.me</a>
+            if (empty($errors)) {
+              echo 'You can send us your feedback through e-mail on the following e-mail id:<br/>
+                <div class="row">
+                    <div class="col-md-7"></div>
+                    <div class="col-md-10">
+                        <a href="mailto:contact@satyaprakash.me" style="color:#000000">contact@satyaprakash.me</a>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+                <p align="left">Or you can directly submit your feedback by filling the entries below:-</p><br/>
+                <form role="form" method="post" action="' . htmlspecialchars($_SERVER["PHP_SELF"]) . '" class="pt-3">
+                    <div class="row">
+                        <div class="col-md-12 mt-5">
+                            <div class="form-group pt-4">
+                                <input id="name" name="name" placeholder="Enter your name" class="form-control input-md" type="text" required><br />    
+                                <input id="subject" name="subject" placeholder="Enter subject" class="form-control input-md" type="text" required>
+                            </div>
                         </div>
-                          <div class="col-md-1">
-                       </div>
-
-             
-                     </div>
-
-                        <p align="left" >Or you can directly submit your feedback by filling the enteries below:-</p></br>
-
-                    <form role="form"  method="post" action="feed.php?q=feedback.php"  class="pt-3">
-                      <div class="row">
-                      <div class="col-md-12 mt-5">
-                      <!-- Text input-->
-
-                      <div class="form-group pt-4">
-                        <input id="name" name="name" placeholder="Enter your name" class="form-control input-md" type="text"><br />    
-                         <input id="name" name="subject" placeholder="Enter subject" class="form-control input-md" type="text">    
-
-                        </div>
-                        </div>
-                        </div><!--End of row-->
-
-                        <div class="row">
+                    </div>
+                    <div class="row">
                         <div class="col-md-12">
-                        <!-- Text input-->
-                        <div class="form-group">
-                          <input id="email" name="email" placeholder="Enter your email-id" class="form-control input-md" type="email">    
-                         </div>
+                            <div class="form-group">
+                                <input id="email" name="email" placeholder="Enter your email-id" class="form-control input-md" type="email" required>    
+                            </div>
                         </div>
-                        </div><!--End of row-->
-
-                        <div class="form-group"> 
-                        <textarea rows="3" cols="6" name="feedback" class="form-control" placeholder="Write feedback here..."></textarea>
-                        </div>
-                        <div class="form-group" align="center">
-                        <input type="submit" name="submit" value="Submit" class="feedback-btn " />
-                        </div>
-                        </form>';
-                      } ?>
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="3" cols="6" name="feedback" class="form-control" placeholder="Write feedback here..." required></textarea>
+                    </div>
+                    <div class="form-group" align="center">
+                        <input type="submit" name="submit" value="Submit" class="feedback-btn">
+                    </div>
+                </form>';
+            }
+            ?>
         </div>
-        
-              </div>
-      </div>
+    </div>
+</div>
+
+
+
+
+
     </div>
   </div>
   </div>

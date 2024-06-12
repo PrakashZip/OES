@@ -7,29 +7,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Project Worlds || TEST YOUR SKILL </title>
+
+  <!-- --------------------css files =------------------>
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
   <link rel="stylesheet" href="css/main.css">
-  <!-- Option 1: Include in HTML -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="css/font.css">
+
+  <!-- bootsrap icon  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+  <!-----------------google font----------------->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-  <script src="js/jquery.js" type="text/javascript"></script>
-
-
-  <script src="js/bootstrap.min.js" type="text/javascript"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
-  <?php if (@$_GET['w']) {
-    echo '<script>alert("' . @$_GET['w'] . '");</script>';
-  }
-  ?>
+
+
+  <!-------------------jquery link--------------------------->
+  <script src="js/jquery.js" type="text/javascript"></script>
+  <script src="js/bootstrap.min.js" type="text/javascript"></script>
+
+
+  
+
+<?php if (isset($_GET['w'])): ?>
+    <script>
+      alert("<?php echo htmlspecialchars($_GET['w']); ?>");
+    </script>
+  <?php endif; ?>
+
   <script>
-    function validateForm() {
-      var y = document.forms["form"]["name"].value; var letters = /^[A-Za-z]+$/; if (y == null || y == "") { alert("Name must be filled out."); return false; } var z = document.forms["form"]["college"].value; if (z == null || z == "") { alert("college must be filled out."); return false; } var x = document.forms["form"]["email"].value; var atpos = x.indexOf("@");
-      var dotpos = x.lastIndexOf("."); if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= x.length) { alert("Not a valid e-mail address."); return false; } var a = document.forms["form"]["password"].value; if (a == null || a == "") { alert("Password must be filled out"); return false; } if (a.length < 5 || a.length > 25) { alert("Passwords must be 5 to 25 characters long."); return false; }
-      var b = document.forms["form"]["cpassword"].value; if (a != b) { alert("Passwords must match."); return false; }
+   
+   function validateForm() {
+      var form = document.forms["form"];
+      var name = form["name"].value;
+      var college = form["college"].value;
+      var email = form["email"].value;
+      var password = form["password"].value;
+      var cpassword = form["cpassword"].value;
+      
+      if (name == null || name == "") {
+        alert("Name must be filled out.");
+        return false;
+      }
+      
+      if (college == null || college == "") {
+        alert("College must be filled out.");
+        return false;
+      }
+      
+      var atpos = email.indexOf("@");
+      var dotpos = email.lastIndexOf(".");
+      if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= email.length) {
+        alert("Not a valid e-mail address.");
+        return false;
+      }
+      
+      if (password == null || password == "") {
+        alert("Password must be filled out");
+        return false;
+      }
+      
+      if (password.length < 5 || password.length > 25) {
+        alert("Passwords must be 5 to 25 characters long.");
+        return false;
+      }
+      
+      if (password != cpassword) {
+        alert("Passwords must match.");
+        return false;
+      }
     }
   </script>
 
@@ -265,50 +313,6 @@
 
 
 
-  <!-- Modal For Developers-->
-  <div class="modal fade title1" id="developers">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
-              class="sr-only">Close</span></button>
-          <h4 class="modal-title"><span style="color:black">Developers</span></h4>
-        </div>
-
-        <div class="modal-body">
-          <p>
-          <div class="row">
-            <div class="col-md-5">
-              <img src="image/CAM00121.jpg" width=100 height=100 alt="Prakash " class="img-rounded">
-            </div>
-            <div class="col-md-3">
-              <a href="#" style="color:#202020;font-size:15px" class="navbar-brand">
-                <h5>Contact Me</h5>
-                <h5>satyapraksah.od@gmail.com</h5>
-                <h5>Lovely professional University, Phagwara</h5>
-                </a>
-            </div>
-          </div>
-
-          <div class="row pt-5">
-            <div class="col-md-5">
-              <img src="image\hamad3.jpg" width=100 height=100 alt="Prakash " class="img-rounded">
-            </div>
-            <div class="col-md-3">
-              <a href="#" style="color:#202020;font-size:15px" class="navbar-brand">
-                <h5>Contact Me</h5>
-                <h5>hamadsaif.dev@gmail.com</h5>
-                <h5>utkal University, BBSR</h5>
-                </a>
-            </div>
-          </div>
-          </p>
-        </div>
-
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal -->
-
   <!--Modal for admin login-->
   <div class="modal fade" id="login">
     <div class="modal-dialog">
@@ -324,10 +328,10 @@
             <div class="col-md-6">
               <form role="form" method="post" action="admin.php?q=index.php">
                 <div class="form-group">
-                  <input type="text" name="uname" maxlength="20" placeholder="Admin user id" class="form-control" />
+                  <input type="text" name="uname" maxlength="20" placeholder="Admin user id" class="form-control" required/>
                 </div>
                 <div class="form-group">
-                  <input type="password" name="password" maxlength="15" placeholder="Password" class="form-control" />
+                  <input type="password" name="password" maxlength="15" placeholder="Password" class="form-control" required />
                 </div>
                 <div class="form-group" align="center">
                   <input type="submit" name="login" value="Sign in" class="admin-btn btn-success-index" />
@@ -337,13 +341,12 @@
             <div class="col-md-3"></div>
           </div>
         </div>
-        <!--<div class="modal-footer">
+        <!-- <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>-->
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal -->
-  <!--footer end-->
+        </div> -->
+     </div>
+     </div>
+     </div>
 
 
 </body>
